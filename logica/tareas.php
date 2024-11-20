@@ -17,7 +17,7 @@ if($idPost != 0){
     $nombre = isset( $data['nombre']) ?  $data['nombre'] : "-";
     $descripcion = isset( $data['descripcion']) ?  $data['descripcion'] : "-";
     $img = isset( $data['img']) ?  $data['img'] : "-";
-    $sql = "  INSERT INTO `tabla_prueba`( `Nombre`, `descripcion`, `estado`,`img`) VALUES (?,?,1,?);";
+    $sql = "  INSERT INTO `tabla_prueba`( `Nombre`, `descripcion`, `estado`,`url`) VALUES (?,?,1,?);";
 
     $stmt = $conn->prepare($sql);
 
@@ -50,7 +50,7 @@ if($idPost != 0){
     $nombre = isset( $data['nombre']) ?  $data['nombre'] : "-";
     $descripcion = isset( $data['descripcion']) ?  $data['descripcion'] : "-";
         $img = isset( $data['img']) ?  $data['img'] : "-";
-    $sql = "UPDATE `tabla_prueba` SET `Nombre`=?,`descripcion`=?,`img`=? WHERE id = ?";
+    $sql = "UPDATE `tabla_prueba` SET `Nombre`=?,`descripcion`=?,`url`=? WHERE id = ?";
 
     $stmt = $conn->prepare($sql);
 
