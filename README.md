@@ -1,2 +1,2 @@
 # prueba_bd
-Proyecto para realizar ultima prueba
+Proyecto para desarrollar última prueba
