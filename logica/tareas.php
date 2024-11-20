@@ -2,7 +2,7 @@
 
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
-include "../seguridad/config.php";
+include "../security/db.php";
 
 $id = isset($_GET["id"]) ? $_GET["id"] : 0;
 
