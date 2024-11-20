@@ -85,7 +85,7 @@ function completarTabla(data) {
         <th scope="row">${item.id}</th>
         <td>${item.Nombre}</td>
         <td>${item.descripcion}</td>
-           <td><img src="${item.img}" alt="${item.Nombre}" style="max-width: 200px; max-height: 100px; width:100%" /></td>
+           <td><img src="${item.url}" alt="${item.Nombre}" style="max-width: 200px; max-height: 100px; width:100%" /></td>
         <td>
             <div class="${estado.class} text-secondary text-center p-1 border-opacity-10 rounded">
             ${estado.nombre}
@@ -94,7 +94,7 @@ function completarTabla(data) {
         <td class="text-center" >
             <div class="btn-group" role="group" >
                 <button type="button" class="btn btn-warning" 
-                onclick="editData('${item.Nombre}','${item.descripcion}',${item.id},'${item.img}') " >Editar</button>
+                onclick="editData('${item.Nombre}','${item.descripcion}',${item.id},'${item.url}') " >Editar</button>
                 <button type="button" class="btn btn-danger" onclick="updateEstado(${item.id},-1)" >Eliminar</button>
             </div>    
         </td>
