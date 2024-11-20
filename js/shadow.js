@@ -64,7 +64,7 @@ function save() {
     .catch((error) => console.error("Error:", error))
     .then((response) => {
       if (response.message == 200) {
-        appendAlert("Se guardo la tarea", "success");
+        appendAlert("Se guardo la producto", "success");
         obtenerInformacion();
       }
     });
@@ -85,7 +85,7 @@ function completarTabla(data) {
         <th scope="row">${item.id}</th>
         <td>${item.Nombre}</td>
         <td>${item.descripcion}</td>
-           <td><img src="${item.url}" alt="${item.Nombre}" style="max-width: 200px; max-height: 100px; width:100%" /></td>
+           <td><img src="${item.url}" alt="${item.Nombre}" style="max-width: 100px; width:100%;" /></td>
         <td>
             <div class="${estado.class} text-secondary text-center p-1 border-opacity-10 rounded">
             ${estado.nombre}
@@ -130,11 +130,11 @@ function update() {
     .catch((error) => console.error("Error:", error))
     .then((response) => {
       if (response.message == 200) {
-        appendAlert2("Se actualizo la tarea", "success");
+        appendAlert2("Se actualizo la producto", "success");
         myModal.hide();
         obtenerInformacion();
       } else {
-        appendAlert2("No se actualizo la tarea", "error");
+        appendAlert2("No se actualizo la producto", "error");
       }
     });
 }
@@ -155,15 +155,15 @@ function updateEstado(id, estado) {
     .then((response) => {
       if (response.message == 200) {
         if (estado == 2) {
-          appendAlert2("Se Completo la tarea", "info");
+          appendAlert2("Se Completo la producto", "info");
         } else {
-          appendAlert2("Se Elimino la tarea", "danger");
+          appendAlert2("Se Elimino la producto", "danger");
         }
 
         myModal.hide();
         obtenerInformacion();
       } else {
-        appendAlert2("No se actualizo la tarea", "error");
+        appendAlert2("No se actualizo la producto", "error");
       }
     });
 }
