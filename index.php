@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <img
-          src="img/enac.png"
+          src="https://enac.cl/wp-content/uploads/2022/01/Diseno-sin-titulo-20-Photoroom.png"
           alt="Logo"
           height="50"
           class="d-inline-block align-text-top"
